@@ -1,4 +1,4 @@
-package time
+package karl_time
 
 import "time"
 

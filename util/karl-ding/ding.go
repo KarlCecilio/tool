@@ -1,4 +1,4 @@
-package ding
+package karl_ding
 
 import (
 	"io"

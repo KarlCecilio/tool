@@ -1,4 +1,4 @@
-package zip
+package karl_zip
 
 import (
 	"archive/zip"

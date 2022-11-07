@@ -1,4 +1,4 @@
-package wget
+package karl_wget
 
 import (
 	"bytes"

@@ -1,4 +1,4 @@
-package file
+package karl_file
 
 import (
 	"bufio"
