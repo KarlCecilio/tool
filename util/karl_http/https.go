@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"crypto/tls"
 	"encoding/json"
-	"fmt"
 	"io"
 	"net/http"
 	"net/http/cookiejar"
@@ -27,7 +26,7 @@ func HttpsPost(url string, arg interface{}) (string, error) {
 			body = b
 		}
 	}
-	fmt.Println("[https-Post-request:]%s", string(body))
+	//fmt.Println("[https-Post-request:]%s", string(body))
 	buf = bytes.NewBuffer(body)
 	tr := &http.Transport{
 		TLSClientConfig:    &tls.Config{InsecureSkipVerify: true},

@@ -11,7 +11,7 @@ import (
 func Notice(pWebHook string, pKeyword string, pMsg string) (string, error) {
 	webHook := pWebHook
 	content := `{"msgtype": "text",
-		"text": {"content": "` + pKeyword + `-` + pMsg + `"}
+		"text": {"content": "` + pKeyword + `:\n` + pMsg + `"}
 	}`
 	//创建一个请求
 	req, err := http.NewRequest("POST", webHook, strings.NewReader(content))
